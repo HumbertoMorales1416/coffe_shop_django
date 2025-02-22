@@ -1,0 +1,109 @@
+//Estructura de color y saturacion fija
+$scheme-h: 221 !default;
+$scheme-s: 14% !default;
+$dark-l: 20% !default;
+$light-l: 90% !default;
+
+//Prefijos
+$class-prefix: 'cs-' !default; // Prefijo de las clases
+$cssvar-prefix: 'bbm-' !default; // Prefijo de las variables css
+$helpers-prefix: 'is-' !default; // Prefijo de las clases de utilidades
+$helpers-has-prefix: 'has-' !default; // Prefijo de las clases de utilidades
+
+//Banderas
+$variable-columns: true !default; // Habilita las variables de columnas
+$rtl: false !default; // Habilita el soporte de direcciones de derecha a izquierda
+
+//Tipografía
+$family-sans-serif: 'Roboto', sans-serif !default; // Familia de fuentes sans-serif
+$family-monospace: 'Roboto Mono', monospace !default; // Familia de fuentes monospace
+$render-modo: optimizeLegibility !default; // Modo de renderizado de fuentes
+
+//Tipografia - Tamaños
+$size-1: 3rem !default; // 3 veces mas el tamaño de la fuente base
+$size-2: 2.25rem !default; // 2.5 veces mas el tamaño de la fuente base
+$size-3: 2rem !default; // 2 veces mas el tamaño de la fuente base
+$size-4: 1.5rem !default; // 1.5 veces mas el tamaño de la fuente base
+$size-5: 1.25rem !default; // 1.25 veces mas el tamaño de la fuente base
+$size-6: 1rem !default; // 1 veces mas el tamaño de la fuente base
+$size-7: 0.75rem !default; // 0.75 veces mas el tamaño de la fuente base
+
+//Tipografia - Grosor
+$weight-light: 300 !default;
+$weight-normal: 400 !default;
+$weight-medium: 500 !default;
+$weight-semibold: 600 !default;
+$weight-bold: 700 !default;
+$weight-extrabold: 800 !default;
+
+//Colores
+$black: hsl(221, 14%, 4%) !default;
+$black-bis: hsl(221, 14%, 9%) !default;
+$black-ter: hsl(221, 14%, 14%) !default;
+$white: hsl(221, 14%, 100%) !default;
+$white-bis: hsl(221, 14%, 98%) !default;
+$white-ter: hsl(221, 14%, 96%) !default;
+$grey-darker: hsl(221, 14%, 21%) !default;
+$grey-dark: hsl(221, 14%, 29%) !default;
+$grey: hsl(221, 14%, 48%) !default;
+$grey-light: hsl(221, 14%, 71%) !default;
+$grey-lighter: hsl(221, 14%, 86%) !default;
+$grey-lightest: hsl(221, 14%, 93%) !default;
+
+$green: hsl(98.37, 55.13%, 69.41%) !default;
+$cyan: hsl(199.2, 91.24%, 73.14%) !default;
+$orange: hsl(27.89, 89.06%, 74.9%) !default;
+$red: hsl(2.56, 76.64%, 58.04%) !default;
+$purple: hsl(279.39, 50.25%, 61.37%) !default;
+
+$color-primary: hsl(167, 33%, 25%) !default; // Color primario
+$color-secondary: hsl(229, 33%, 68%) !default; // Color secundario
+$color-accent: hsl(244, 33%, 40%) !default; // Color de acento
+
+//Responsivo
+$gap: 32px !default; // Espaciado entre columnas
+$tablet: 769px !default; // Tamaño de pantalla de tablet
+$desktop: 960px + 2 * $gap !default; // Tamaño de pantalla de escritorio
+$widescreen: 1152px + 2 * $gap !default; // Tamaño de pantalla de widescreen
+$widescreen-enabled: true !default; // Habilita el soporte de widescreen
+$fullhd: 1344px + 2 * $gap !default; // Tamaño de pantalla de fullhd
+$fullhd-enabled: true !default; // Habilita el soporte de fullhd
+$breakpoints: (
+  'mobile': ('until': $tablet,
+  ),
+  'tablet': ('from': $tablet,
+  ),
+  'tablet-only': ('from': $tablet,
+    'until': $desktop,
+  ),
+  'touch': ('until': $desktop,
+  ),
+  'desktop': ('from': $desktop,
+  ),
+  'desktop-only': ('from': $desktop,
+    'until': $widescreen,
+  ),
+  'until-widescreen': ('until': $widescreen,
+  ),
+  'widescreen': ('from': $widescreen,
+  ),
+  'widescreen-only': ('from': $widescreen,
+    'until': $fullhd,
+  ),
+  'until-fullhd': ('until': $fullhd,
+  ),
+  'fullhd': ('from': $fullhd,
+  ),
+  ) !default; // Breakpoints
+
+//Radios de borde
+$easing: ease-out !default; // Efecto de transición
+$radius-small: 0.25rem !default; // Radio de borde pequeño
+$radius: 0.375rem !default; // Radio de borde
+$radius-medium: 0.5rem !default; // Radio de borde mediano
+$radius-large: 0.75rem !default; // Radio de borde grande
+$radius-rounded: 9999px !default; // Radio de borde redondeado
+$speed: 86ms !default;
+
+//Espaciado
+$block-spacing: 1.5rem !default; // Espaciado de bloque
